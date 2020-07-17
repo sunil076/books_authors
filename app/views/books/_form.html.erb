@@ -5,7 +5,7 @@
 
       <ul>
         <% book.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
+          <h3><li><%= message %></li></h3>
         <% end %>
       </ul>
     </div>
@@ -20,7 +20,7 @@
     <%= form.label :book_price %>
     <%= form.text_field :book_price %>
   </div>
-
+  
   <div class="field">
     <%= form.label :authors %>
     <%= form.collection_select(:author_ids, Author.all, :id, :first_name, {},  multiple: true) %>

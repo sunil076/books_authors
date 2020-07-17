@@ -1,14 +1,23 @@
-<p id="notice"><%= notice %></p>
+<div class="show_detail">
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Book title:</strong>
-  <%= @book.book_title %>
-</p>
+	<p>
+	  <strong>Book title:</strong>
+	  <%= @book.book_title %>
+	</p>
 
-<p>
-  <strong>Book price:</strong>
-  <%= @book.book_price %>
-</p>
+	<p>
+	  <strong>Book price:</strong>
+	  <%= @book.book_price %>
+	</p>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+	<p>
+		<strong>Author Name:</strong>
+		<% @book.authors.each do |author| %>
+	  <%= author.first_name %>,
+	  <% end %>
+	</p>
+
+	<button><%= link_to 'Edit', edit_book_path(@book) %></button>
+	<button><%= link_to 'Back', books_path %></button>
+</div>

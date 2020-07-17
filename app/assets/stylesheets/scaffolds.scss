@@ -1,3 +1,51 @@
+input,option{
+  font-size: 17px;
+}
+.home_page{
+  text-align: center;
+}
+.block{
+  margin-top: 100px;
+}
+#author_book_ids{
+  width: 19%;
+}
+.new_record{
+  background-color: lightgray;
+  padding: 42px 20px 72px 20px;
+  text-align: center;
+}
+.edit_details{
+    text-align: center;
+    background-color: lightgray;
+    padding: 40px 20px 70px;
+  }
+.show_detail{
+  background-color: lightgray;
+  text-align: center;
+  padding: 42px 20px 72px 20px;
+}
+.show{
+  background-color: green;
+}
+.edit{
+  background-color: yellow;
+}
+.destroy{
+  background-color: red;
+}
+button{
+  border: none;
+}
+.new{
+  background-color:#697b7a;
+}
+
+a{
+  margin-top: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
 body {
   background-color: #fff;
   color: #333;
@@ -5,7 +53,7 @@ body {
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 20px;
   line-height: 18px; }
 
 pre {
@@ -17,7 +65,7 @@ a {
   color: #000; }
 
 a:visited {
-  color: #666; }
+  color: #111; }
 
 a:hover {
   color: #fff;
@@ -63,3 +111,15 @@ div.actions {
 
 label {
   display: block; }
+
+.block{
+  text-decoration: none;
+}
+
+#notice{
+  text-align: center;
+}
+.table{
+  background-color: lightgray;
+  text-align: -webkit-center;
+}

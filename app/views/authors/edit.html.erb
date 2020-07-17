@@ -1,6 +1,9 @@
-<h1>Editing Author</h1>
+<div class="edit_details">
 
-<%= render 'form', author: @author %>
+	<h1>Editing Author</h1>
 
-<%= link_to 'Show', @author %> |
-<%= link_to 'Back', authors_path %>
+	<%= render 'form', author: @author %>
+
+	<button><%= link_to 'Show', @author %></button> 
+	<button><%= link_to 'Back', authors_path %></button>
+</div>

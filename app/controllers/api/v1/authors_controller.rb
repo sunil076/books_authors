@@ -1,16 +1,19 @@
-class AuthorsController < ApplicationController
+class Api::V1::AuthorsController < ApplicationController
   before_action :set_author, only: [:show, :edit, :update, :destroy]
 
   # GET /authors
   # GET /authors.json
   def index
-    @authors = Author.all
+    @authors = Author.all.as_json(include: :books)
+    render json: @authors
   end
 
   # GET /authors/1
   # GET /authors/1.json
   def show
-
+    
+    @authors = Author.find(params[:id]).as_json(include: :books)
+    render json: @authors
   end
 
   # GET /authors/new

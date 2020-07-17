@@ -1,6 +1,8 @@
-<h1>Editing Book</h1>
+<div class="edit_details">
+	<h1>Editing Book</h1>
 
-<%= render 'form', book: @book %>
+	<%= render 'form', book: @book %>
 
-<%= link_to 'Show', @book %> |
-<%= link_to 'Back', books_path %>
+	<button><%= link_to 'Show', @book %></button>
+	<button><%= link_to 'Back', books_path %></button>
+</div>
